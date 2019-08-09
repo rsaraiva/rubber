@@ -30,6 +30,7 @@ module Rubber
         instance_alias = host || cfg.environment.current_host 
         instance = cfg.instance[instance_alias]
 	puts '======================================================='
+	puts '======================================================='
 	puts cfg
 	puts '======================================================='
         if instance
