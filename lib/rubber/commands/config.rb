@@ -29,6 +29,9 @@ module Rubber
         cfg = Rubber::Configuration.get_configuration(Rubber.env)
         instance_alias = host || cfg.environment.current_host 
         instance = cfg.instance[instance_alias]
+	puts '======================================================='
+	puts cfg
+	puts '======================================================='
         if instance
           role_names = instance.role_names
           env = cfg.environment.bind(role_names, instance_alias)
